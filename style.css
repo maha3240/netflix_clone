@@ -138,28 +138,25 @@ nav button{
 .curve-container{
     height: 97px;
 }
-.light{
-    box-sizing: border-box;
-    width: 30%;
-    background-color: #db0001;
-    z-index: 5;
-    position: relative;
-    bottom: 90px;
-}
+
 .features{
     width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    z-index: 2000;
+    box-sizing: border-box;
     position: relative;
-    z-index: 10;
-    
+    top: 90%;
 }
 .img_col img{
-    height: 40%
+    height: 150px;
+
 }
 .row{
     border-radius: 50% 50% 0 0;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     position: relative;
-    top: 60%;
+    
 }
