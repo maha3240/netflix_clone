@@ -136,27 +136,118 @@ nav button{
     background: linear-gradient(35deg, #000 , rgba(0, 0, 0));
 }
 .curve-container{
-    height: 97px;
+    height: 86px;
 }
 
 .features{
     width: 100%;
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 0;
     z-index: 2000;
     box-sizing: border-box;
     position: relative;
-    top: 90%;
+    bottom: 118px;
+    border-radius: 27% 9% 0 0;
+    background: #000;
+    margin: 3%;
+   
 }
 .img_col img{
     height: 150px;
-
 }
 .row{
-    border-radius: 50% 50% 0 0;
+    display: flex;
+    width: 88%;
+    position: relative;
+    bottom: 8%;
+    flex-direction: column;
+    margin: 0 0 6% 10%;
+}
+.text_col h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #333;
+}
+.slider {
+    position: relative;
+    width: 94%;
+    overflow: hidden;
+    border: none;
+}
+
+.slider-container {
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.movie{
+    min-width: 200px;
+    height: 300px;
+    margin: 0 10px;
+    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
+    border-radius: 3%;
+}
+.reasons{
+    display: flex;
+
+}
+.reasons .first_reason{
+    height: 150px;
+    width: 250px;
+    margin: 0 10px;
+    background-color: #333;
+    font-size: 1rem;
+    border-radius: 10%;
+    padding: 10px;
+    display: flex;
+}
+.reasons span{
+    width: 75%;
+    font-size: -0.1rem;
+    font-weight: 700;
+}
+.reasons i{
     position: relative;
-    
+    top: 79%;
+    left: 12%;
+    font-size: 25px;
+    background: linear-gradient(to right, rgba(184, 40, 105, 1), rgba(229, 9, 20, 0.7), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%,rgba(0,0,0));
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+    box-shadow: 1px 1px 2px #000;
+    height: 65px;
+    border-radius: 15px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
