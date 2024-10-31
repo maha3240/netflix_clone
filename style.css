@@ -9,7 +9,7 @@ body{
     color: #fff;
 }
 html{
-    overflow: scroll;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 .header{
@@ -169,7 +169,7 @@ nav button{
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px #333;
 }
-.slider {
+.slider1,.slider2 {
     position: relative;
     width: 94%;
     overflow: hidden;
@@ -184,10 +184,11 @@ nav button{
 
 .slider-content {
     display: flex;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease-in;
+    
 }
 
-.movie{
+.slider1 .movie,.slider2 .movie{
     min-width: 200px;
     height: 300px;
     margin: 0 10px;
@@ -197,6 +198,13 @@ nav button{
     align-items: center;
     font-size: 1.5rem;
     border-radius: 3%;
+    box-shadow: 3px 3px 6px #1d1d1d;
+    overflow-y: visible;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+   
 }
 .reasons{
     display: flex;
@@ -222,7 +230,7 @@ nav button{
     top: 79%;
     left: 12%;
     font-size: 25px;
-    background: linear-gradient(to right, rgba(184, 40, 105, 1), rgba(229, 9, 20, 0.7), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%,rgba(0,0,0));
+    background: linear-gradient(to right, rgba(184, 40, 105, 1), rgba(229, 9, 20, 0.7), rgba(184, 40, 105, 1), rgba(129, 22, 124, 0.6) 84%,rgb(160, 66, 184));
      background-clip: text;
      -webkit-text-fill-color: transparent;
 
@@ -250,4 +258,64 @@ nav button{
 
 .next {
     right: 0;
+}
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 14%;
+}
+.questions{
+    margin: 15px auto 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: tranform 0.3s;
+}
+input[type="radio"]{
+    display: none;
+}
+.questions .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 0.5s padding 0.5s;
+    border-radius: 10px;
+}
+.questions input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.questions input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
 }

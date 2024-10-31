@@ -39,8 +39,8 @@
             <div class="text_col">
                 <h2>Trending Now</h2>                
             </div>
-            <div class="slider">
-                <button class="prev" onclick="movePrev()">&#10094;</button>
+            <div class="slider1">
+                <button class="prev" onclick="slider1.movePrev()">&#10094;</button>
                 <div class="slider-container">
                     <div class="slider-content">
                         <div class="movie">Movie 1</div>
@@ -52,18 +52,23 @@
                         <div class="movie">Movie 7</div>
                         <div class="movie">Movie 8</div>
                         <div class="movie">Movie 9</div>
+                        <div class="movie">Movie 6</div>
+                        <div class="movie">Movie 6</div>
+                        <div class="movie">Movie 7</div>
+                        <div class="movie">Movie 8</div>
+                        <div class="movie">Movie 9</div>
                         <!-- Add more movies as needed -->
                     </div>
                 </div>
-                <button class="next" onclick="moveNext()">&#10095;</button>
+                <button class="next" onclick="slider1.moveNext()">&#10095;</button>
             </div>
         </div>
         <div class="row">
             <div class="text_col">
                 <h2>Only on Netflix</h2>                
             </div>
-            <div class="slider">
-                <button class="prev" onclick="movePrev()">&#10094;</button>
+            <div class="slider2" id="slider2">
+                <button class="prev" onclick="slider2.movePrev()">&#10094;</button>
                 <div class="slider-container">
                     <div class="slider-content">
                         <div class="movie">Movie 1</div>
@@ -75,10 +80,14 @@
                         <div class="movie">Movie 7</div>
                         <div class="movie">Movie 8</div>
                         <div class="movie">Movie 9</div>
+                        <div class="movie">Movie 6</div>
+                        <div class="movie">Movie 7</div>
+                        <div class="movie">Movie 8</div>
+                        <div class="movie">Movie 9</div>
                         <!-- Add more movies as needed -->
                     </div>
                 </div>
-                <button class="next" onclick="moveNext()">&#10095;</button>
+                <button class="next" onclick="slider2.moveNext()">&#10095;</button>
             </div>
         </div>
         <div class="row">
@@ -106,6 +115,65 @@
         </div>
         </div>
     </div>
-    
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="questions">
+            <li>
+                <input type="radio" name="questions" id="first">
+                <label for="first">what is Netflix?</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, dolorum.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="questions" id="second">
+                <label for="second">How much does Netflix cost?</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, dolorum.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="questions" id="third">
+                <label for="third">where can I watch?</label>
+                <div class="content">
+                    <p>                        
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                        You can watch as much as you want, whenever you want without a single commercial all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                        </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="questions" id="forth">
+                <label for="forth">How do I cancel?</label>
+                <div class="content">
+                    <p>                        
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                        You can watch as much as you want, whenever you want without a single commercial all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                        </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="questions" id="fifth">
+                <label for="fifth">what can I watch on Netflix?</label>
+                <div class="content">
+                    <p>                        
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                        You can watch as much as you want, whenever you want without a single commercial all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                        </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="questions" id="six">
+                <label for="six">Is Netflix good for kids?</label>
+                <div class="content">
+                    <p>                        
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                        You can watch as much as you want, whenever you want without a single commercial all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                        </p>
+                </div>
+            </li>
+        </ul>
+    </div>  
+<script src="script.js"></script>
 </body>
 </html>
