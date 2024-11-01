@@ -48,3 +48,25 @@ document.querySelectorAll('input[name="questions"]').forEach(radio => {
         }
     });
 });
+
+function langClicked(){
+    let langBtn= document.querySelector('.lang_btn');
+    let border = document.querySelector('.ft-btn');
+    let langBtnStyle = window.getComputedStyle(border);
+    if (border.style.visibility === 'hidden') {
+        border.style.visibility = 'visible';   
+    }else{
+        border.style.visibility = 'hidden';   
+    }
+    
+};
+window.addEventListener('scroll', () => {
+    const button = document.querySelector('#sticky-btn button');
+    const scrollThreshold = 1130.4;
+  
+    if (window.scrollY >= scrollThreshold) {
+      button.classList.add('sticky');
+    } else {
+      button.classList.remove('sticky');
+    }
+  });

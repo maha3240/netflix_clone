@@ -13,8 +13,7 @@
        <nav>
         <img src="netflix-img/images/logo.png" class="logo">
         <div>
-            <button class="lang_btn">English <img src="netflix-img/images/down-icon.png" ></button>
-            <button>Sign In</button>
+            <button onclick="window.location.href=`https://www.netflix.com/login`">Sign In</button>
         </div>
        </nav> 
        <div class="header_content">
@@ -43,21 +42,17 @@
                 <button class="prev" onclick="slider1.movePrev()">&#10094;</button>
                 <div class="slider-container">
                     <div class="slider-content">
-                        <div class="movie">Movie 1</div>
-                        <div class="movie">Movie 2</div>
-                        <div class="movie">Movie 3</div>
-                        <div class="movie">Movie 4</div>
-                        <div class="movie">Movie 5</div>
-                        <div class="movie">Movie 6</div>
-                        <div class="movie">Movie 7</div>
-                        <div class="movie">Movie 8</div>
-                        <div class="movie">Movie 9</div>
-                        <div class="movie">Movie 6</div>
-                        <div class="movie">Movie 6</div>
-                        <div class="movie">Movie 7</div>
-                        <div class="movie">Movie 8</div>
-                        <div class="movie">Movie 9</div>
-                        <!-- Add more movies as needed -->
+                        <img src="netflix-img/images/strangerthings.jpg" alt="" class="movie" style="border: 1px solid rgb(15, 15, 15);">
+                        <img src="netflix-img/images/heeramandi.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/elitE.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/family pack.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/anime1.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/you.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/flutter house.webp" alt="" class="movie">
+                        <img src="netflix-img/images/bridgerton.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/outerbanks.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/window3.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/cartoon3.jpg" alt="" class="movie">
                     </div>
                 </div>
                 <button class="next" onclick="slider1.moveNext()">&#10095;</button>
@@ -71,20 +66,17 @@
                 <button class="prev" onclick="slider2.movePrev()">&#10094;</button>
                 <div class="slider-container">
                     <div class="slider-content">
-                        <div class="movie">Movie 1</div>
-                        <div class="movie">Movie 2</div>
-                        <div class="movie">Movie 3</div>
-                        <div class="movie">Movie 4</div>
-                        <div class="movie">Movie 5</div>
-                        <div class="movie">Movie 6</div>
-                        <div class="movie">Movie 7</div>
-                        <div class="movie">Movie 8</div>
-                        <div class="movie">Movie 9</div>
-                        <div class="movie">Movie 6</div>
-                        <div class="movie">Movie 7</div>
-                        <div class="movie">Movie 8</div>
-                        <div class="movie">Movie 9</div>
-                        <!-- Add more movies as needed -->
+                        <img src="netflix-img/images/moneyheist.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/cartoon2.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/witcher.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/vikings.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/avataarseries.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/the package.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/heeramandi.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/cartoon.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/avatar.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/dark.jpg" alt="" class="movie">
+                        <img src="netflix-img/images/cartoon2.jpg" alt="" class="movie">
                     </div>
                 </div>
                 <button class="next" onclick="slider2.moveNext()">&#10095;</button>
@@ -173,7 +165,47 @@
                 </div>
             </li>
         </ul>
-    </div>  
+    </div>
+    <form class="sign_up" id="sticky-btn">
+        <button type="submit">Get Started</button>
+    </form>
+    <footer>
+        <div class="ft-link">
+            <a href="#">Questions? Contact us</a>
+        </div>
+        <div class="more-links">
+            <div class="lnk-col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="lnk-col">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="lnk-col">
+                <a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Coperate Information</a>
+                <a href="#">Only on netflix</a>
+            </div>
+            <div class="lnk-col">
+                <a href="#">Media Center</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="ft-btn">
+            <button class="lang_btn" onclick=" langClicked()"><img src="language-outline_1.svg" alt="A" class="svg">
+                English <img src="netflix-img/images/down-icon.png" class="down-icon"></button>
+        </div>
+        <div class="brand">
+            <span>Netflix Pakistan</span>
+        </div>
+    </footer>
 <script src="script.js"></script>
 </body>
 </html>
