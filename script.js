@@ -61,8 +61,8 @@ function langClicked(){
     
 };
 window.addEventListener('scroll', () => {
-    const button = document.querySelector('#sticky-btn button');
-    const scrollThreshold = 1130.4;
+    let button = document.querySelector('.sticky-btn');
+    let scrollThreshold = 100;
   
     if (window.scrollY >= scrollThreshold) {
       button.classList.add('sticky');

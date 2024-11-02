@@ -350,13 +350,17 @@ input[type="radio"]{
     border-bottom-left-radius:  48px 100%;
     border-top-right-radius: 48px 100%;
     border-bottom-right-radius: 48px 100%;
-    position:static;
+    position: sticky;
+    z-index: 2000;
+    bottom: 40px;
+    right: 45%;
     transition: position o.3s ease-in-out,
     bottom 0.3s ease-in-out;
 }
 .sticky{
+
     position: fixed;
-    z-index: 12000;
+    z-index: 2000;
     bottom: 40px;
     right: 45%;
 }
@@ -430,4 +434,81 @@ footer div{
 .brand{
     margin: 2% 0;
     color: #bdbcbc;
+}
+/*------------------signIn--------------*/
+.sign_in{
+    display: flex;
+    background: linear-gradient(45deg,rgb(0,0,0),transparent);
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+    height: 80%;
+    box-shadow: 3px 3px 6px #000;
+    margin: 3% 30%;
+    padding: 0 7%;
+    border-radius: 10px;
+}
+.sign_in h2{
+    margin: 45px 0 20px 0;
+    font-size: 2rem;
+}
+.sign_in input{
+    height: 60px;
+    width: 100%;
+    margin-bottom:15px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: 0;
+    background: rgba(26, 25, 25, 0.7);
+
+}
+.sign_in button{
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    height: 45px;
+    width: 100%;
+    margin-bottom:15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sign_in .check{
+    display: flex;
+    margin: 25px 0 5%;
+}
+.sign_in .check #remember{
+    height: 20px;
+    width: 40px;
+    margin-left: 0;
+    border: 1px solid grey;
+    outline: 0;
+    background: rgba(26, 25, 25, 0.7);
+}
+
+.sign_in div label{
+    font-size: 16px;
+}
+.sign_in div label::after{
+    content: '';
+}
+
+.sign_in a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 2px;
+}
+.sign_in a:hover{
+    text-decoration: underline;
+}
+.sign_in span{
+    margin-bottom: 15px;
+}
+.learn{
+    position: relative;
+    top: 30px;
+    font-size: 12px;
+    color: #747171b2;
 }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>netflix</title>
+
+</head>
+<body>
+    <div class="header">
+       <nav>
+        <img src="netflix-img/images/logo.png" class="logo">
+        <div>
+            <button><a href="sign_in.html" style="text-decoration: none;color: #000;">Sign In</a></button>
+        </div>
+       </nav> 
+        <form class="sign_in">
+            <h2>Sign In</h2>
+                <input type="text" placeholder="Email address or mobile number" required>
+                <input type="text" placeholder="Enter password" required>
+                <button type="submit" style="background-color: #db0001;">Sign In</button>
+                <span style=" padding: 0 45%;">OR</span>
+                <button type="submit"  style="background-color: #97959552;">Use a Sign-In Code</button>
+                <span style=" padding: 0 0 0 30%;"><a href="https://www.netflix.com/pk/LoginHelp">Forgot password?</a></span>
+            <div class="check"><input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label></div>
+            <span>New to Netflix?<a href="https://www.netflix.com/signup/registration?previousMode=welcome&locale=en-PK">Sign up now.</a></span>
+            <span class="learn">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="https://policies.google.com/terms" style="color: rgb(21, 54, 163);">Learn more.</a></span>
+        </form>
+       </div>
+    </div>
+    <div class="curved-bar">
+        <div class="curve-container">
+            <div class="curve"></div>
+            <div class="shadow">          
+        </div>
+    </div>
+    </div> 
+    <footer>
+        <div class="ft-link">
+            <a href="https://help.netflix.com/en/contactus">Questions? Contact us</a>
+        </div>
+        <div class="more-links">
+            <div class="lnk-col">
+                <a href="https://help.netflix.com/en/node/412">FAQ</a>
+                <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a>
+                <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Privacy</a>
+                <a href="https://fast.com/">Speed Test</a>
+            </div>
+            <div class="lnk-col">
+                <a href="https://help.netflix.com/en">Help Center</a>
+                <a href="https://jobs.netflix.com/">Jobs</a>
+                <a href="https://www.onetrust.com/products/cookie-consent/">Cookie Preferences</a>
+                <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+            </div>
+            <div class="lnk-col">
+                <a href="https://www.netflix.com/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Account</a>
+                <a href="https://help.netflix.com/en/node/14361">Ways to Watch</a>
+                <a href="https://help.netflix.com/en/node/134094">Coperate Information</a>
+                <a href="https://www.netflix.com/pk/browse/genre/839338">Only on netflix</a>
+            </div>
+            <div class="lnk-col">
+                <a href="https://media.netflix.com/en/">Media Center</a>
+                <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+                <a href="https://help.netflix.com/en/contactus">Contact Us</a>
+            </div>
+        </div>
+        <div class="ft-btn">
+            <button class="lang_btn" onclick=" langClicked()"><img src="language-outline_1.svg" alt="A" class="svg">
+                English <img src="netflix-img/images/down-icon.png" class="down-icon"></button>
+        </div>
+        <div class="brand">
+            <span>Netflix Pakistan</span>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
