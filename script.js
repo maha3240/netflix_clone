@@ -60,7 +60,7 @@ function langClicked(){
     }
     
 };
-window.addEventListener('scroll', () => {
+/*window.addEventListener('scroll', () => {
     let button = document.querySelector('.sticky-btn');
     let scrollThreshold = 100;
   
@@ -69,4 +69,4 @@ window.addEventListener('scroll', () => {
     } else {
       button.classList.remove('sticky');
     }
-  });
+  });*/

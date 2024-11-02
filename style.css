@@ -65,8 +65,8 @@ nav button:hover{
 }
 
 .header_content h1{
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 2.9rem;
+    line-height: 3.7rem;
     font-weight: 600px;
     max-width: 650px;
 }
@@ -104,7 +104,7 @@ nav button:hover{
     border: 0;
     outline: 0;
     height: 58px;
-    width: 180px;
+    width: 11rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 700;
@@ -156,7 +156,7 @@ nav button:hover{
 
 .features{
     width: 100%;
-    max-width: 120rem;
+    max-width: 130rem;
     margin: 0;
     z-index: 2000;
     box-sizing: border-box;
@@ -168,7 +168,7 @@ nav button:hover{
    
 }
 .img_col img{
-    height: 150px;
+    height: 7.3rem;
 }
 .row{
     display: flex;
@@ -205,8 +205,8 @@ nav button:hover{
 }
 
 .slider1 .movie,.slider2 .movie{
-    min-width: 200px;
-    height: 300px;
+    min-width:14.4rem;
+    height: 19.3rem;
     margin: 0 10px;
     background-color: #333;
     display: flex;
@@ -231,8 +231,8 @@ nav button:hover{
 
 }
 .reasons .first_reason{
-    height: 150px;
-    width: 250px;
+    height: 9.3rem;
+    width: 14.2rem;
     margin: 0 10px;
     background-color: #333;
     font-size: 1rem;
@@ -249,11 +249,10 @@ nav button:hover{
     position: relative;
     top: 79%;
     left: 12%;
-    font-size: 25px;
+    font-size: 1.4rem;
     background: linear-gradient(to right, rgba(184, 40, 105, 1), rgba(229, 9, 20, 0.7), rgba(184, 40, 105, 1), rgba(129, 22, 124, 0.6) 84%,rgb(160, 66, 184));
      background-clip: text;
      -webkit-text-fill-color: transparent;
-
 }
 
 .prev, .next {
@@ -265,10 +264,10 @@ nav button:hover{
     color: white;
     padding: 10px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.12rem;
     z-index: 1;
     box-shadow: 1px 1px 2px #000;
-    height: 65px;
+    height: 4.06rem;
     border-radius: 15px;
 }
 
@@ -283,10 +282,10 @@ nav button:hover{
 .faq{
     padding: 10px 12%;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.12rem;
 }
 .faq h2{
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 700;
     text-align: left;
     margin-left: 3%;
@@ -295,7 +294,7 @@ nav button:hover{
 .questions{
     margin: 15px auto 30px auto;
     width: 100%;
-    max-width: 980px;
+    max-width: 61.2rem;
 }
 .questions li{
     list-style: none;
@@ -306,7 +305,7 @@ nav button:hover{
     display: flex;
     align-items: center;
     padding: 20px;
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 500;
     background: #303030;
     margin-bottom: 2px;
@@ -316,7 +315,7 @@ nav button:hover{
 }
 label::after{
     content: '+';
-    font-size: 34px;
+    font-size: 2.1rem;
     position: absolute;
     right: 20px;
     transition: tranform 0.3s;
@@ -334,7 +333,7 @@ input[type="radio"]{
     border-radius: 10px;
 }
 .questions input[type="radio"]:checked + label + .content{
-    max-height: 600px;
+    max-height:37.5rem;
     padding: 30px 20px;
 }
 .questions input[type="radio"]:checked + label::after{
@@ -372,22 +371,23 @@ footer{
     color:whitesmoke;
     justify-content: space-between;
     height:auto;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 footer a{
     color: #bdbcbc;
     margin-bottom: 20px;
 }
+
 footer div{
     padding: 20px 5px;
 }
 .ft-link{
-    font-size: 17px;
+    font-size: 1.06rem;
 }
 .ft-btn{
     text-align: center;
     border: 2px solid whitesmoke;
-    width: 14%;
+    width: 7.5rem;
     padding: 3px;
     border-top-left-radius: 42px 100%;
     border-bottom-left-radius:  42px 100%;
@@ -416,15 +416,15 @@ footer div{
     margin-left: 5px;
 }
 .svg{
-    height: 20px;
+    height:1.25rem;
     margin-right: 5px;
-    width: 30px;
+    width: 1.8rem;
 }
 
 .more-links{
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 .lnk-col{
     display: flex;
