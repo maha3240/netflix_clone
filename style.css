@@ -512,3 +512,246 @@ footer div{
     font-size: 12px;
     color: #747171b2;
 }
+/* Mobile Styles */
+@media (max-width: 600px){
+    body{
+        background-color: #0f0f0f;
+    }
+    html{
+        overflow-x:visible;
+    }
+    .header {
+        width: 100%;
+        height: 115vh; 
+        padding: 5px 8%;
+        background-image: none;
+    }
+    nav{
+        width: 100%;
+        padding:10% 10px;
+    }
+    .logo{
+        width: 5.6rem;
+        margin-right: 35px;
+    }
+    .header_content{
+        top:35%;
+        width: 75%;
+    }
+    .header_content h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-top: 30%; 
+    }
+
+    .header_content h3 {
+        margin-top: 15px;
+        font-size: 1.1rem; 
+    }
+    .header_content p{
+        font-size: 0.9rem;
+    }
+    .sign_up{
+        margin: 0 45px;
+        width: 70%;
+    }
+    .sign_up input{
+        display: none;
+    }
+    .sign_up button{
+        font-size: 1.1rem;
+        height: 55px;
+        font-weight: 700;
+        padding: 5px;
+        margin-top: 60%;
+        position: relative;
+        left: 10%;
+    }
+    .sign_in{
+        height: 80vh;
+    }
+    .learn{
+        top: 10%;
+    }
+    .curved-bar{
+        display: none;
+    }
+    .features{
+        width: 75%;
+        background: transparent;
+    }
+    .row{
+        margin:15px 3px;
+        width: 130%;
+    }
+    .movie{
+        width:200px;
+        height: 230px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .movie:hover{
+        transform: scale(1.1);
+    }
+    .slider-content img:hover{
+        margin:0 20px ;
+    }
+    .sign_in {
+        width: 90%; 
+        margin: 5% auto; 
+    }
+    .slider1, .slider2{
+        height: 500px;
+    }
+    .reasons {
+        flex-direction: column;
+        margin: 15px; 
+    }
+    .reasons .first_reason{
+        height: 140px;
+        margin-bottom: 25px;
+        width: 80%;
+    }
+
+    .slider1 .movie,
+    .slider2 .movie {
+        min-width: 60%; 
+        margin: 0 5px;
+        height: 22.2rem; 
+    }
+
+    .prev, .next {
+        padding: 5px; 
+        font-size: 0.9rem;
+        top: 40%;
+    }
+    .faq{
+        margin: 10px 25px;
+        padding: 0;
+        width: 100%;
+    }
+    .faq h2 {
+
+        font-size: 1.2rem; 
+    }
+    .questions{
+        margin: 15px 5px;
+        width: 85%;
+    }
+    .questions input{
+        height: 25px;
+    }
+    .questions label{
+        font-size: 10px;
+    }
+    .questions label::after{
+        position: absolute;
+        right: 8px;
+    }
+    #sticky-btn button{
+        position: relative;
+        left: 10%;
+    }
+    footer{
+        padding: 20px 7px;
+        width: 90%;
+    }
+    .more-links{
+        display: none;
+    }
+}
+
+/*  other mobiles screens  */
+@media (max-width: 390px) and (max-height: 844px){
+    .sign_up button{
+        position: relative;
+        left: 25%;
+        width: 120px;
+    }
+    .reasons .first_reason{
+        height: 145px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        height: 100vh; 
+        padding: 8px 6%;
+       
+    }
+    .header_content{
+        top: 60%;
+        height: 800px;
+    }
+    .header_content h1 {
+        font-size: 3.2rem;
+        line-height: 3rem; 
+        margin-bottom: 15px;
+    }
+    .sign_up{
+        position: relative;
+        top: 10%;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .sign_in {
+        position: relative;
+        top: 10%;
+        width: 70%;
+        height: 750px; 
+        margin: 3% auto; 
+    }
+    .learn{
+        margin-top: 30%;
+    }
+    .features {
+        position: static;
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .slider1 .movie,
+    .slider2 .movie {
+        min-width: 30%;
+    }
+    .reasons{
+        width: 93%;
+    }
+
+    .faq h2 {
+        font-size: 1.6rem; 
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .header {
+        height: 130vh; 
+        padding: 10px 8%; 
+    }
+
+    .header_content h1 {
+        font-size: 2.9rem; 
+        line-height: 3.7rem; 
+    }
+
+    .sign_in {
+        width: 40%;
+        margin: 3% 30%; 
+    }
+
+    .features {
+        flex-direction: row; 
+    }
+
+    .slider1 .movie,
+    .slider2 .movie {
+        min-width: 14.4rem; 
+    }
+
+    .faq h2 {
+        font-size: 1.8rem; 
+    }
+}
